@@ -1,5 +1,7 @@
-This is a codebase I use for competitive programming.
+# C++ competitive programming codebase
 
-I am constantly adding new stuff as I am learning.
+Collection of algorithms/snippets that I used when competing on TopCoder, Google Code Jam, Google Hash Code etc.
 
-snake case is used in this codebase.
+Most of the algorithms I built in the past were in Java, I will reimplement them in C++ as I solve problems that use them.
+
+### style: snake_case
