@@ -1,0 +1,1 @@
+enhance Point struct by overloading certain operators ^=cross *=dot +=vector addition -=vector subtraction
