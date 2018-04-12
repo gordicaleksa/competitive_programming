@@ -1,19 +1,7 @@
-#include <cmath>
-
-typedef double coord_t;         // coordinate type
-
-struct Point {
-	coord_t x, y;
-
-	bool operator <(const Point &p) const {
-		return x < p.x || (x == p.x && y < p.y);
-	}
-};
-
-// just pass the points without replicating the first one
+// just pass in the vertices without replicating the first one at the end
 // it is important that points are ordered either cw or ccw
 // shoelace formula, time complexity: O(n)
-coord_t polygon_area(vector<Point>& vertices) {
+coord_t polygon_area(vector<Point2D>& vertices) {
 	
 	int n = vertices.size();
 	coord_t area = 0;
@@ -32,7 +20,7 @@ coord_t polygon_area(vector<Point>& vertices) {
 
 // it is important that points are ordered either cw or ccw
 // triangulation, time complexity: O(n) it's less efficient than the upper definition
-coord_t polygon_area(vector<Point>& vertices) {
+coord_t polygon_area(vector<Point2D>& vertices) {
 
 	int n = vertices.size();
 	coord_t area = 0;

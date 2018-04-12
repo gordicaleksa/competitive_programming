@@ -10,6 +10,7 @@
 // algorithms
 #include <algorithm>
 #include <utility> // std::pair
+#include <random>
 // C libraries
 #include <ctime>  
 #include <cmath> 
