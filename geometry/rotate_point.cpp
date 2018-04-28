@@ -1,5 +1,6 @@
 // this can be extended to matrices
 
+// ccw rotation
 // rotates point A 'angle' degrees/radians (depending on is_degree flag) around point O and returns that new point
 Point2D rotate(const Point2D& O, const Point2D& A, double angle, bool is_degree) {
 	if (is_degree) angle *= PI / 180.0; // convert to radians

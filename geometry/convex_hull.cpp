@@ -1,3 +1,6 @@
+// other algos: 
+// Quick Hull, Gift Wrapping (also known as Jarvis March), Graham’s Algorithm
+
 // Implementation of Andrew's monotone chain 2D convex hull algorithm.
 // Asymptotic complexity: O(n log n).
 // Practical performance: 0.5-1.0 seconds for n=1000000 on a 1GHz machine.
@@ -22,7 +25,7 @@ vector<Point2D> convex_hull(vector<Point2D>& points) // changed to pass as refer
 	sort(points.begin(), points.end());
 
 	// Build lower hull
-	for (size_t i = 0; i < n; ++i) {
+	for (int i = 0; i < n; ++i) {
 		while (k >= 2 && cross(H[k - 2], H[k - 1], points[i]) <= 0) k--;
 		H[k++] = points[i];
 	}
